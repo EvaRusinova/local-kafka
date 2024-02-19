@@ -1,7 +1,7 @@
 version: '3'
 
 services:
-  db:
+  postgres:
     image: postgres:latest
     restart: always
     ports:
@@ -10,7 +10,6 @@ services:
       POSTGRES_DB: mydatabase
       POSTGRES_USER: myuser
       POSTGRES_PASSWORD: mypassword
-
   pgadmin:
     image: dpage/pgadmin4
     restart: always
@@ -20,4 +19,4 @@ services:
       PGADMIN_DEFAULT_EMAIL: admin@example.com
       PGADMIN_DEFAULT_PASSWORD: admin
     depends_on:
-      - db
+      - postgres
