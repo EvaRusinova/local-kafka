@@ -31,7 +31,7 @@ The credentials to log in with can be found in the xxx.yaml file itself and chan
 -  To run PostgreSQL, use the command:
     ` docker-compose -f docker-compose-postgres.yml up -d --build ` 
 
--  To run RabbitMG, use the command:
+-  To run RabbitMQ, use the command:
     ` docker-compose -f docker-compose-rabbit.yml up -d --build ` 
 
 -  To run all utils at once, use the command:
